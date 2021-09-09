@@ -1,0 +1,30 @@
+<html>
+ <head>
+ <script type="text/javascript">
+ function okno_zamknij_szramowski() 
+ {
+ window.close()
+ }
+ </script>
+ </head>
+<body>
+ 1. w maju 1995 roku<br>
+ 2.Nie musi zostać skompilowany do kodu maszynowego, aby można było zobaczyć efekty jego działania<br>
+ 3.Jest wykonywany u klienta<br>
+ 4.Ze względów bezpieczeństwa JavaScript ma znacznie ograniczone uprawnienia dostępu do zasobów komputera, przy użyciu którego przeglądana jest dana strona, a wszelkie odwołania do funkcji i obiektów wykonywane są w trakcie wykonywania programu<br>
+ 5.Jest to język obiektowy, ponieważ można robić zaawansowane strony internetowe i aplikacje<br><br>
+toolbar=no --> ukrywa pasek narzedzi<br> 
+directories=no --> ukrywa przyciski katalogów <br> 
+menubar=no --> ukrywa menu<br> 
+height=280 --> wysokość 280<br> 
+width=160 --> szerokość 160<br> 
+top=200 --> góra 200<br> 
+left=200 --> lewo 200<br> <br> 
+< input type="button" name="przycisk" value="Nowa Strona" onclick="WinOpen(' ')" > --> przycisk do otwierania nowej strony<br>
+window.open("obraz.html","okienko","toolbar=no,directories=no,menubar=no,height=280,width=160,top=200,left=200"); --> otwiera okno o wartości: wysokość=280, szerokość=160, góra=200, lewo=200<br>
+window.close() --> zamyka strone<br>
+
+ <img src="obraz1.gif" />
+ <input type="button" value="zamknij okno" onclick="okno_zamknij_szramowski()"/>
+</body>
+</html>
