@@ -13,21 +13,21 @@
   
   
   <textarea col="20" rows="30">
-<html>
-<body>
-<div style="color:green;font-size:57px;">
-<script language="JavaScript">
-var dzien1=prompt("dzien1=","");
-var dzien2=prompt("dzien2=","");
-var godz1=prompt("godzina1=","");
-var godz2=prompt("godzina2=","");
-var roznica;
-roznica = ((dzien2*24*60*60)+(godz2*60*60)) - ((dzien1*24*60*60)+(godz1*60*60));
-document.write("miedzy dniem "+dzien1+" a dniem "+dzien2+" jest tyle sekund  "+roznica+"<br>");
-</script>
-</div>
-</body>
-</html>
+    <html>
+      <body>
+      <div style="color:green;font-size:57px;">
+       <script language="JavaScript">
+      var D1_szr=prompt("D1_szr=","");
+      var D2_szr=prompt("D2_szr=","");
+      var G1_szr=prompt("G1_szr=","");
+      var G2_szr=prompt("G2_szr=","");
+          var roznica;
+       roznica=((D2_szr*24*60*60) + (G2_szr*60*60)) - ((D1_szr*24*60*60) + (G1_szr*60*60));
+       document.write("miedzy dniem "+D1_szr+" a dniem "+D2_szr+" i miedzy godzina "+G1_szr+" i godzina "+G2_szr+" wynosi "+roznica+"<br>");
+       </script>
+      </div>
+      </body>
+      </html>
   
   </textarea>
   <input type="button" value="zamknij okno" onclick="okno_zamknij_szramowski()"/>

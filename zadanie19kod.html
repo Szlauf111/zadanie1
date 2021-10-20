@@ -1,0 +1,74 @@
+<!DOCTYPE HTML>
+<html>
+  <head>
+  <script type="text/javascript">
+ function okno_zamknij_szramowski() 
+ {
+ window.close()
+ }
+ </script>
+  </head>
+  
+  <body>
+  
+  
+  <textarea col="20" rows="30">
+    <html> 
+        <head> 
+        <title>
+         Przykład obliczenia pola i obwodu prostokatu
+        </title>
+         <script language="JavaScript">
+        function pole_szramowski(a_szr,b_szr)
+        {
+         a=parseFloat(a_szr)
+         b=parseFloat(b_szr)
+         pole_wynik=a * b
+         document.getElementsByName('pole')[0].value=pole_wynik; /* na dokument */
+         alert("pole="+pole_wynik+" cm^2"); /*do okna Alert */
+         wyprowadz_pole_szr.innerHTML="pole="+pole_wynik+" cm^2"+"<br>";  /* do tabeli */
+        }
+        function obwod_szramowski(a_szr,b_szr)
+        {
+         a=parseFloat(a_szr)
+         b=parseFloat(b_szr)
+         obwod_wynik=(2 *a) + (2 * b)
+         document.getElementsByName('obwod')[0].value=obwod_wynik;
+         alert("obwod="+obwod_wynik+" cm");
+         wyprowadz_obwod_szr.innerHTML="obwod="+obwod_wynik+"cm";
+        }
+         </script>
+        </head> 
+        <body> 
+        Pobliczanie pole i obwod prostakata
+        <br> <br>
+        <form name="formularz" action="..." onsubmit="pole_szramowski(this.a_dana_szr.value,this.b_dana_szr.value); 
+        obwod_szramowski(this.a_dana_szr.value,this.b_dana_szr.value);return false"> 
+        Podaj a=
+        <input size="6" name="a_dana_szr">
+        Podaj b=
+        <input size="6" name="b_dana_szr">
+        <br>
+        <br>
+        <input TYPE="submit" Value="oblicz" >
+        <br>
+        <br>
+        Pole=
+        <input size="6" name="pole">
+        obwod=
+        <input size="6" name="obwod">
+        </form>
+        <table>
+        <tr id="wyprowadz_pole_szr"></tr>
+        <tr id="wyprowadz_obwod_szr"></tr>
+        </table>
+        </body> 
+        </html>
+  
+  </textarea>
+  <input type="button" value="zamknij okno" onclick="okno_zamknij_szramowski()"/>
+  
+  </body>
+  
+  
+</html>
