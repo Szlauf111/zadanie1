@@ -1,0 +1,57 @@
+<!DOCTYPE HTML>
+<html>
+  <head>
+  <script type="text/javascript">
+ function okno_zamknij_szramowski() 
+ {
+ window.close()
+ }
+ </script>
+  </head>
+  
+  <body>
+  
+  
+  <textarea col="20" rows="30">
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+    <div>
+        <script>
+			var a_szr = prompt("podaj liczbę a=","");
+            a_szr = parseFloat(a_szr);
+			var b_szr = prompt("podaj liczbę b=","");
+            b_szr = parseFloat(b_szr);
+			
+
+            for(i = 0; i< b_szr; i++){
+                document.write("*"+"<br>");
+
+            }
+            for(i = 0; i< a_szr; i++){
+               document.write("*");
+               for(i = 0; i<b_szr; i++){
+                    document.write("\u00a0");
+               }
+               document.write("*"+"<br>");
+            } 
+            for(i = 0; i< b_szr; i++){
+                document.write("*");
+            }
+        </script>
+    </div>
+</body>
+</html>
+  
+  </textarea>
+  <input type="button" value="zamknij okno" onclick="okno_zamknij_szramowski()"/>
+  
+  </body>
+  
+  
+</html>
