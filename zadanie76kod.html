@@ -21,26 +21,26 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 <body>
-    <div>
-        <script>
-                var a = prompt("Podaj liczbe a: ");
-                var b = prompt("Podaj liczbe b: ");
-            
-            a = parseInt(a); 
-            b = parseInt(b);
-            let c = "\u00a0";
+    <script>
+        let a = prompt("Podaj a: ")
+        let b = prompt("Podaj b: ")
+        a = parseInt(a)
+        b = parseInt(b)
 
-            for(let i = 1; i<=b; i++){
-                document.write("*");
+        if(a > b){
+            for(; b <= a; a--){
+                if(a%2 == 1){
+                    document.write("<font color = green size = 20px>"+a+"<br></font>")
+                }
             }
-            for(let i = 1; i<=a; i++){
-                document.write("<br>"+"*"+c.repeat(b*2-4)+"*"+"<br>");
+        }else if(b>a){
+            for(; a <= b; a++){
+                if(a%2 == 1){
+                    document.write("<font color = blue size = 40px>"+a+"<br></font>")
+                }
             }
-            for(let i = 1; i<=b; i++){
-                document.write("*");
-            }
-        </script>
-    </div>
+        }
+    </script>
 </body>
 </html>
   
